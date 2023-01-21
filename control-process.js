@@ -33,12 +33,14 @@ console.log(viewWidth, viewHeight)
 
 // responsive varibles
 var thisStartVelocity = 8,
-    thisParticleSpeed = 20;
-    thisPlusParticles = 60;
+    thisParticleSpeed = 20,
+    thisPlusParticles = 60,
+    lightRatio = 8;
 
 // responsive
 if (viewWidth < 400) {
-    setLightRatio(4);
+    lightRatio = 3;
+    setLightRatio(lightRatio);
     thisStartVelocity = viewHeight/100;
     thisParticleSpeed = 15;
     thisPlusParticles = 40;
@@ -102,7 +104,7 @@ async function startProcess(){
 
     await sleep(8000);
     //stop fire and reset data
-    setLightRatio(8);
+    setLightRatio(lightRatio);
     setParticleSpeed(thisParticleSpeed);
     setStartVelocity(thisStartVelocity);
     setPlusParticles(plusParticles);
