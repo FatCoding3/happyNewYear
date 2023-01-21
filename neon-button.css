@@ -1,0 +1,82 @@
+:root{
+    --neonColor: #2196f3;
+    --backgroundColor: #031321;
+    --offColor: #062038;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#neon-button-background{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--backgroundColor);
+    position: fixed;
+        top: 0;
+        left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1;
+    z-index: 12;
+}
+
+#neon-button{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.6vw;
+    font-weight: bold;
+
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--neonColor);
+    color: var(--neonColor);
+
+    font-size: 4vw;
+    padding: 4vh 4vw;
+    border-style: solid;
+    border-radius: 2vw;
+
+    transition: 0.2s;
+    animation: none;
+}
+
+#neon-button:hover{
+    background-color: var(--neonColor);
+    color: var(--backgroundColor);
+    box-shadow: 0 0 1vw var(--neonColor), 
+    0 0 4vw var(--neonColor), 
+    0 0 8vw var(--neonColor);
+}
+
+@keyframes animateButton
+{
+    3%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 85.1%, 100%
+    {
+        background-color: #fff;     
+        color: var(--backgroundColor);
+        border-color: var(--neonColor);
+        box-shadow: 0 0 1vw var(--neonColor), 
+        0 0 4vw var(--neonColor), 
+        0 0 8vw var(--neonColor),
+        0 0 16vw var(--neonColor);
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 85%
+    {
+        background-color: var(--offColor);
+        color: var(--backgroundColor);
+        border-color: var(--offColor);
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #neon-button{
+        font-size: 8vw;
+        padding: 4vh 8vw;
+        border-radius: 4vw;
+    }
+}

@@ -1,0 +1,94 @@
+#wish-background{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+    color: white;
+
+    mix-blend-mode:multiply;
+    position: fixed;
+        top: 0%;
+        left: 0%;
+
+    z-index: 2;
+    display: none;
+
+}
+
+.content{
+    font-family: 'Lora', serif;
+    font-size: 5vw; 
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+
+    text-align: center;
+
+    position: absolute;
+}
+
+#content1{
+    width: 40vw;
+    top: 10vh;
+    left: 7vw;
+    display: none;
+}
+#content2{
+    width: 50vw;
+    top: 30vh;
+    left: 50vw;
+    display: none;
+}
+#content3{
+    width: 50vw;
+    top: 35vh;
+    left: 8vw;
+    display: none;
+}
+
+
+#lastWish{
+    width: 60vw;
+    line-height: 17vh;
+    top: 20vh;
+    left: 20vw;
+
+    letter-spacing: 0.5vw;
+    font-size: 7vw;
+    font-weight: bold;
+    display: none;
+}
+
+@media screen and (max-width: 400px){
+    .content{
+        font-size: 7vw;
+        letter-spacing: 0.2vw;
+    }
+
+    #content1{
+
+        width: 60vw;
+        top: 15vh;
+        left: 10vw;
+    }
+
+    #content2{
+        
+        width: 70vw;
+        left: 25vw
+    }
+
+    #content3{
+        
+        width: 70vw;
+        top: 45vh;
+    }
+
+    #lastWish{
+        letter-spacing: 1vw;
+        line-height: 12vh;
+        font-size: 12vw;
+        width: 40vw;
+        top: 25vh;
+        left: 30vw;
+    }
+}

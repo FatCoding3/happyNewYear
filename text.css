@@ -1,0 +1,73 @@
+:root{
+    --neonColor: #2196f3;
+    --backgroundColor: #031321;
+    --offColor: #062038;
+}
+#text-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+        top: 0;
+        left: 0;
+    background-color: var(--backgroundColor);
+    z-index: 0;
+    transition: 0;
+    opacity: 0;
+}
+
+.text{
+    width: 100vw;
+    position: relative;
+    font-family: Arial;
+    font-size: 6vw;
+    font-weight: bold;
+    letter-spacing: 1vw;
+    color: var(--offColor);
+    text-transform: uppercase;
+    text-align: center;
+
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 4.1vw;
+    outline: none;
+    animation: animateText 5s linear infinite;
+}
+
+#text1{
+    display: none;
+    animation: none;
+}
+#text2{
+    display: none;
+    animation: none;
+}
+@keyframes animateText
+{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 97.1%, 99%
+    {
+        color: #fff;     
+        border-color: var(--neonColor);
+        text-shadow: 0 0 1vw var(--neonColor), 
+        0 0 4vw var(--neonColor), 
+        0 0 8vw var(--neonColor),
+        0 0 16vw var(--neonColor);
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 97%, 99.1%, 100%
+    {
+        color: var(--offColor);
+        border-color: var(--offColor);
+        text-shadow: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .text{
+        font-size: 10vw;
+        letter-spacing: 2vw;
+        line-height: 7vw;
+    }
+}

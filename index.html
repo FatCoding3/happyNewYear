@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---Fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- ---CSS--- -->
+        <link rel="stylesheet" href="neon-button.css">
+        <link rel="stylesheet" href="wish.css">
+        <link rel="stylesheet" href="other.css">
+        <link rel="stylesheet" href="text.css">
+        
+        <!-- <script src="jquery.fireworks.js"></script> -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Happy New Year</title>
+</head>
+<body id="body" style="background-color: rgb(99, 99, 99)">
+    <div id="purdah">
+        
+        <div id="wish-background">
+            <div id="content1" class="content">Chúc bạn luôn mạnh khỏe<br>và luôn tươi vui</div>
+            <div id="content3" class="content">Một cái tết ấm no, tràn đầy tình thương và hạnh phúc</div>
+            <div id="content2" class="content">Chúc bạn một<br> năm mới an khang, thịnh vượng</div>
+            <div id="lastWish" class="content">CHÚC MỪNG NĂM MỚI</div>
+        </div>
+    </div>
+
+    <div id="glass"></div>
+
+    <div id="neon-button-background">
+        <button id="neon-button" onclick="startProcess()">CLICK ME</button>
+    </div>
+
+    <div id="text-background">
+        <div id="text1" class="text">thank you</div>
+        <div id="text2" class="text">that's end</div>
+    </div>
+    
+    <audio id="demoSound" src="fireworkblast2.mp3" controls></audio>
+    <audio id="fireworkSound0" src="fireworkblast2.mp3" controls></audio>
+    <audio id="fireworkSound1" src="fireworkblast2.mp3" controls></audio>
+    <audio id="fireworkSound2" src="fireworkblast2.mp3" controls></audio>
+    <audio id="fireworkSound3" src="fireworkblast2.mp3" controls></audio>
+    <audio id="fireworkSound4" src="fireworkblast2.mp3" controls></audio>
+    <audio id="fireworkSound5" src="fireworkblast2.mp3" controls></audio>
+    <audio id="song" src="HappyNewYear.mp3" controls></audio>
+</body>
+<!-- ---Script--- -->
+    
+    <script src="control-neon-button.js"></script>
+    <script src="jquery.fireworks.js"></script>
+    <script src="control-process.js"></script>
+    <script src="control-text.js"></script>
+</html>
