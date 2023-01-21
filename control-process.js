@@ -38,6 +38,7 @@ var thisStartVelocity = 8,
 
 // responsive
 if (viewWidth < 400) {
+    setLightRatio(4);
     thisStartVelocity = viewHeight/100;
     thisParticleSpeed = 15;
     thisPlusParticles = 40;

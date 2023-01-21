@@ -41,6 +41,9 @@
 
     transition: 0.2s;
     animation: none;
+
+    position: relative;
+        bottom: 10vh;
 }
 
 #neon-button:hover{
